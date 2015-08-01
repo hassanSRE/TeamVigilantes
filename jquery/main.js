@@ -1,4 +1,3 @@
 //Locations
 
 //Catagories
-alert("hi!");
