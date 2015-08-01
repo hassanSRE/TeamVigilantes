@@ -15,7 +15,7 @@ $(document).ready(function() {
 function init(){
 
 	//set location and catagories
-	$.getJSON("https://api.trademe.co.nz/v1/Localities/Regions.json", function(data){
+	$.getJSON("https://api.trademe.co.nz/v1/TmAreas.json", function(data){
 		locations = data;
 		addLocations();
 	});
@@ -25,16 +25,16 @@ function init(){
 		addCatagories();
 	});
 
-	// addDropdownCallbacks();
+	addDropdownCallbacks();
 }
 
 function addLocations(){
 	var ld = $("#location-drop");
 	for(pos in locations) {
 		 	var value = locations[pos].Name;
-		 	var option = "<option>"+value+"</option>";
+		 	var option = "<option value="+pos+">"+value+"</option>";
 	    ld.append(option);
-		}
+	}
 }
 
 function addCatagories(){
@@ -44,8 +44,45 @@ function addCatagories(){
 		var valueName = value.Name;
 	 	var option = "<option>"+valueName+"</option>";
     c1d.append(option);
-	})
+	});
 }
+
+function addDropdownCallbacks(){
+	locationCallback();
+	catagory1Callback();
+}
+
+function locationCallback(){
+	$('#location-drop').change(updateDistricts);
+}
+
+function updateDistricts(){
+
+	dd = $('#district-drop');
+	//empty whats there
+	dd.empty();
+
+	//add new locations
+	var currentLocation = $('#location-drop').val();
+	var districts = locations[currentLocation].Districts;
+	for(pos in districts) {
+		 	var value = districts[pos].Name;
+		 	var id = districts[pos].DistrictId;
+		 	var option = "<option value="+id+">"+value+"</option>";
+	    dd.append(option);
+	}
+}
+
+function catagory1Callback(){
+	$('#category1-drop').change(function(){updatecat();});
+	// $('#category2-drop').change(updateCat);
+	// $('#category3-drop').change(updateCat);
+}
+function updateCat1(){
+	// c2 = $('');
+}
+
+//selector item + object
 
 
 
