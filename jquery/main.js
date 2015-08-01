@@ -79,7 +79,7 @@ function catagory1Callback(){
 	// $('#category3-drop').change(updateCat);
 }
 function updateCat1(){
-	// c2 = $('');
+	c2 = $('#category2-drop');
 }
 
 //selector item + object
