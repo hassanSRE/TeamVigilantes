@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/hassany88/TeamVigilantes",
   "dependencies": {
-    "express": "^4.13.2"
+    "express": "^4.13.2",
+    "body-parser": "*",
+    "request": "*"
   }
 }
