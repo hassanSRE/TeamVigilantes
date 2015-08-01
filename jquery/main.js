@@ -15,3 +15,6 @@ function addLocations() {
 
 //Catagories
 
+function addCatagories() {
+
+}
