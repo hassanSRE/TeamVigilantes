@@ -26,6 +26,8 @@ function init(){
 	});
 
 	addDropdownCallbacks();
+
+	addButtonListener();
 }
 
 function addLocations(){
@@ -159,9 +161,6 @@ function updateCat4(){
 	});
 }
 
-
-
-
 function updateCat22(){
 	//get the dropdown object to update
 	c2 = $('#category2-drop2');
@@ -235,4 +234,10 @@ function updateCat42(){
 			});
 		}
 	});
+}
+
+function addButtonListener(){
+	$('#searchButton').click( function(){
+		console.log('button clicked');
+	})
 }
