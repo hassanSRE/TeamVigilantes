@@ -18,10 +18,4 @@ function addLocations() {
 }
 
 //Catagories
-<<<<<<< HEAD
-||||||| merged common ancestors
-alert("hi!");
-=======
-//alert("hi!");
 
->>>>>>> b4d727b45193e8cb37578ffaf98ffe494eb00543
