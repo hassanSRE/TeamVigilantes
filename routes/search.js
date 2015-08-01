@@ -11,8 +11,8 @@ var path = '/v1/Search/General.json';
 router.get('/', function(req, res, next) {
   var mRequest = {
     date: "",
-    district: 66,
-    catagories: [1]
+    region: 50,
+    category: 1
   }
 
   search.getSearch(mRequest, function(data){
