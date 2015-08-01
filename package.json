@@ -1,0 +1,9 @@
+{
+  "name": "Don't-Steal-My-stuff",
+  "version": "0.0.1",
+  "main": "/sendFile/server.js",
+  "dependencies": {
+    "express": "*",
+    "request": "*"
+  }
+}
