@@ -1,5 +1,7 @@
 $(document).ready(function() {
 	addLocations();
+	addCatagories();
+	callbackCatagory1();
 });
 
 //Locations
@@ -26,5 +28,26 @@ function addLocations() {
 //Catagories
 
 function addCatagories() {
-
+	$.getJSON("http://api.trademe.co.nz/v1/Categories.json", function(data){
+		var ld = $("#category1-drop");
+		// console.log(data);
+		data.Subcategories.forEach(function(value, key){
+			var value = value.Name;
+		 	var option = "<option>"+value+"</option>";
+	    ld.append(option);
+		})
+	});
 }
+
+function callbackCatagory1(){
+	$('#category1-drop')
+            .change(function(e) {
+            	console.log($('#category1-drop').val());
+            })
+            .end()
+}
+
+function myFunction(){
+	console.log('hi');
+}
+
