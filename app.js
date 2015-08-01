@@ -23,7 +23,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes);
+app.get('/', function(req, res) {
+  console.log(__dirname);
+  res.sendFile(path.join(__dirname + '/sendFile/index.html'));
+});
 app.use('/search', search);
 
 // catch 404 and forward to error handler
