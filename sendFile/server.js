@@ -3,10 +3,18 @@ var app = express();
 var path = require('path');
 var places = require('../apiRequests/places');
 var categories = require('../apiRequests/categories');
+var bodyParser = require('body-parser');
+app.use( bodyParser.json() );       // to support JSON-encoded bodies
 
 // viewed at http://localhost:8080
 app.get('/', function(req, res) {
+    console.log(__dirname);
     res.sendFile(path.join(__dirname + '/index.html'));
+});
+
+//search
+app.get('/search', function(req, res){
+
 });
 
 //Get a list of large areas Eg. Wellington region
