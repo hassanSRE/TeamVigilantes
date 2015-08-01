@@ -5,9 +5,7 @@ $(document).ready(function() {
 });
 
 //Locations
-
 function addLocations() {
-	var tempList = ["Northland", "Auckland", "Waikato", "Bay of Plenty", "Gisborne", "Hawke's Bay", "Taranaki" , "Manawatu / Wanganui", "Wellington", "Nelson / Tasmin", "Malborough", "West Coast", "Otago", "Southland"];
 	$.getJSON("https://api.trademe.co.nz/v1/Localities/Regions.json", function(data){
 		var ld = $("#location-drop");
 		for(pos in data) {
@@ -15,6 +13,15 @@ function addLocations() {
 		 	var option = "<option>"+value+"</option>";
 	    ld.append(option);
 		}
+		console.log(ld.val());
+		// var districts = data[selectedLocation].Districts;
+		// var dd = $('#district-drop');
+		// console.log(districts);
+		// for(pos in districts) {
+		// 	var value = district[pos].Name;
+		// 	var option = "<option>"+value+"</option>";
+	 //    dd.append(option);
+		// }
 	});
 }
 
