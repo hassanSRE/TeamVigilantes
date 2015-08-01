@@ -50,4 +50,9 @@ Icon
 .AppleDesktop
 Network Trash Folder
 Temporary Items
+
 .apdisk
+
+#ignoring mod
+sendFile/node_modules*
+
