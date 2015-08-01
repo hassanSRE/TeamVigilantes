@@ -1,0 +1,43 @@
+@import url("http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
+
+
+body {
+	background-color: #172933;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.container {
+	padding: 0px 50px 20px 50px;
+	background-color: white;
+	width: 800px;
+}
+
+#heading {
+	background-color: #172933;
+	
+}
+
+.page-header {
+	border-bottom-width: 0;
+	color: white;
+	font-family: "deadfamily", Georgia, Serif;
+	height: 125px;
+	background: url(../images/header.png) no-repeat;
+	background-position: center;
+}
+
+.page-header h1 {
+	font-size: 5em;
+	text-indent : -9999px; 
+}
+
+#description h1{
+	font-size: 64px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.form-control {
+	border-radius: 0;
+	-webkit-appearance: none;
+}
