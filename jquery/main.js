@@ -1,20 +1,16 @@
-$(document).ready(
-	addLocations
-);
+$(document).ready(function() {
+	addLocations();
+});
 
 //Locations
-var tempList = {1:"one", 2:"two", 3:"three"};
-
 
 function addLocations() {
-	console.log("hi!");
-	var ourText = 'wat';
-	var option = "<option>"+ourText+"</option>";
-  var ld = $("#location-drop");
-  ld.append(option);
-  console.log(option);
-  console.log(ld);
-
+	var tempList = ["Northland", "Auckland", "Waikato", "Bay of Plenty", "Gisborne", "Hawke's Bay", "Taranaki" , "Manawatu / Wanganui", "Wellington", "Nelson / Tasmin", "Malborough", "West Coast", "Otago", "Southland"];
+	var ld = $("#location-drop");
+	for(var value in tempList) {
+		var option = "<option>"+tempList[value]+"</option>";
+	  ld.append(option);
+	}
 }
 
 //Catagories
