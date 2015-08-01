@@ -17,5 +17,7 @@ function addLocations() {
 }
 
 //Catagories
-//alert("hi!");
 
+function addCatagories() {
+
+}
