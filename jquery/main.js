@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	addLocations();
+	addDistricts();
 	addCatagories();
 	callbackCatagory1();
 });
@@ -23,6 +24,14 @@ function addLocations() {
 	 //    dd.append(option);
 		// }
 	});
+}
+
+function addDistricts() {
+	$('#category1-drop')
+            .change(function(e) {
+            	console.log($('#category1-drop').val());
+            })
+            .end()
 }
 
 //Catagories
