@@ -24,6 +24,13 @@ function init(){
 	addDropdownCallbacks();
 
 	addButtonListener();
+	if($("#loaded").length > 0) {
+		setTimeout( function() {
+			$("#loading").hide();
+			$("#loaded").show();
+		},3000);
+	}
+
 }
 
 function addLocations(){

@@ -22,33 +22,40 @@
 			<h1>Don't Sell My Stuff</h1>
 		</div>
 	</div>
-
+<div class="container">
 <!--DESCRIPTION-->
-	<div class="container" id="description">
+	<div id="description">
 		<h1><b>Let's catch 'em</b></h1>
 		<p>Those little begggars grrrr! Don't let them get away with stealing and selling your stuff. Fill in the details below to see if your stolen goods may be listed on Trademe.</p>
 	</div>
 
 <!--LOCATION DETAILS-->
-	<div class="container" id="location">
+	<div id="location">
 		<div class="row">
 			<div class="col-lg-6">
-			  <h2>Location</h2>
-				<select class="form-control dropown-menu" id="location-drop"></select> 
-			</div><!-- /.col-lg-4 -->
-			<!--
-			<div class="col-lg-4">
-				<label>District</label>
-				<select class="form-control" id="district-drop"></select> 
-			</div><!-- /.col-lg-4 -->
+			  <h3>Location</h3>
+			</div><!-- /.col-lg-6 -->
 			<div class="col-lg-6">
+				<h3>Date of theft</h3>
+			</div><!-- /.col-lg-6 -->
+		</div><!-- /.row -->
+		<div class="row box">
+		  <div class="col-lg-2">
+		    <h4>Town/City</h4>
+		  </div>
+			<div class="col-lg-5">
+				<select class="form-control dropown-menu" id="location-drop"></select> 
+			</div><!-- /.col-lg-5 -->
+			<div class="col-lg-1">
+		    <h4>Date</h4>
+		  </div>
+			<div class="col-lg-4">
 				<div id="date">
 					<form>
-				  <h2>Date of theft</h2>
 				  <input type="date" name="theftday" id="calander">
 				</form>
 				</div>
-			</div>
+			</div><!-- /.col-lg-4 -->
 		</div><!-- /.row -->
 	</div>
 
@@ -56,12 +63,11 @@
 	
 
 <!--ITEM 1 DETAILS-->
-	<div class="container" id="items">
-		<h2>Stolen Items</h2>
+  <h3>Stolen Items</h3>
+	<div class="row box" id="items">
+		
 		<div class="row">
-			<div class="row">
-				<h4>Item 1</h4>
-			</div>
+			<h4>Item 1</h4>
 			<div class="col-lg-3">
 				<select class="form-control" id="category1-drop">
 				</select> 
@@ -82,9 +88,7 @@
 
 <!--ITEM 2 DETAILS-->
 		<div class="row">
-			<div class="row">
 				<h4>Item 2</h4>
-			</div>
 			<div class="col-lg-3">
 				<select class="form-control" id="category1-drop2">
 				</select> 
@@ -104,31 +108,33 @@
 				</select> 
 			</div><!-- /.col-lg-3 -->
 		</div><!--row-->
-	</div>
-
-<!--ADD ITEM BUTTON-->
-<div class="container" id="addItem">
-	<div class="row">
-		<div class="col-lg-1">
-			<button type="button" class="btn btn-success" id="addItemButton">Add Item</button>
+		<div class="row">
+		<br/>
+		  <!--ADD ITEM BUTTON-->
+			<div id="addItem">
+				<div class="row">
+					<div class="col-lg-1">
+						<button type="button" class="btn btn-success addButton" id="addItemButton">Add Item +</button>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-</div>
+
+
 
 <!--SEARCH BUTTON-->
-<div class="container" id="search">
-	<div class="row">
-		<div class="col-lg-1">
-			<a href="search-results.html"><button type="button" class="btn btn-primary" id="searchButton">Search</button></a>
-		</div>
-	</div>
+<div id="search">
+			<a href="search-results.html"><button type="button" class="btn btn-primary searchButton" id="searchButton">Search</button></a>
+</div>
 </div>
 
-  </div>
+</div>
 	<div class="col-lg-2">
 	  <div id="brought_to_you_by"></div>
 	</div>
-<div class="row">
+</div>
+
 
 </body>
 </html>

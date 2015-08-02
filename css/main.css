@@ -30,14 +30,55 @@ body {
 	text-indent : -9999px; 
 }
 
+.box {
+	border: 2px solid #5ddfbc;
+	padding: 30px 5px 30px 5px;
+	margin-bottom: 20px;
+}
+
+.row {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+h4 {
+	padding-left: 15px;
+}
+
 #description h1{
 	color: #5ddfbc;
 	font-size: 64px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
+#date {
+	margin-top: 5px;
+}
+
 .form-control {
 	border-radius: 0;
+}
+
+.addButton {
+	border-width: 0px;
+	background-color: white;
+	color: black;
+}
+
+.searchButton {
+	font-size: 24px;
+	height: 60px;
+	width: 200px;
+	border-width: 0px;
+	background-color: #5ddfbc;
+	color: #172933;
+	margin: auto;
+}
+
+.search {
+	
+	width: 200px;
+	margin: auto;
 }
 
 /* RESULTS PAGE */
@@ -70,7 +111,7 @@ body {
 }
 
 #sponsors {
-	padding-top: 200px;
+	padding-top: 150px;
 	height: 152px;
 	width: 800px;
 	background: url(../images/resultpage_sponsorship.png) no-repeat;
@@ -94,4 +135,25 @@ body {
 	background: url(../images/brought_to_you_by.png) no-repeat;
 	background-position: bottom;
   margin: auto;
+}
+
+#disclaimer {
+	font-size: 0.8em;
+	color: white;
+	width: 800px;
+	margin: auto;
+}
+
+.underline {
+	text-decoration: underline;
+}
+#loading {
+	padding-top: 300px;
+	height: 500px;
+	width: 300px;
+	margin: auto;
+}
+
+#loaded {
+	display: none;
 }
