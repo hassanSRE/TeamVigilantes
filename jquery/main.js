@@ -238,6 +238,9 @@ function updateCat42(){
 
 function addButtonListener(){
 	$('#searchButton').click( function(){
-		console.log('button clicked');
+		// var searchObject = {}
+		console.log($('#location-drop').val());
+		console.log($('#category4-drop2').val());
+		
 	})
 }
