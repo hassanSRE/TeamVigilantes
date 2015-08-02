@@ -42,6 +42,9 @@ function addLocations(){
 function addCatagories(){
 	var c1d = $("#category1-drop");
 	var c1d2 = $("#category1-drop2");
+	//put in dummy selections
+	c1d.append("<option>Select category...</option>");
+	c1d2.append("<option>Select category...</option>");
 
 	catagories.Subcategories.forEach(function(value, key){
 		var valueName = value.Name;
@@ -89,8 +92,11 @@ function catagory1Callback(){
 function updateCat2(){
 	//get the dropdown object to update
 	c2 = $('#category2-drop');
-	//empty whats already there
+		//empty whats already there
 	c2.empty();
+	//put in dummy selection
+	c2.append("<option>Select category...</option>");
+
 	//add new catagories
 	var currentCat = $('#category1-drop').val();
 	catagories.Subcategories.forEach(function(value, key){ //first layer
@@ -107,8 +113,11 @@ function updateCat2(){
 function updateCat3(){
 	//get the dropdown object to update
 	c3 = $('#category3-drop');
-	//empty whats already there
+		//empty whats already there
 	c3.empty();
+	//put in dummy selection
+	c3.append("<option>Select category...</option>");
+
 	//add new catagories
 	var currentCat1 = $('#category1-drop').val();
 	var currentCat2 = $('#category2-drop').val();
@@ -130,8 +139,11 @@ function updateCat3(){
 function updateCat4(){
 	//get the dropdown object to update
 	c4 = $('#category4-drop');
-	//empty whats already there
+		//empty whats already there
 	c4.empty();
+	//put in dummy selection
+	c4.append("<option>Select category...</option>");
+
 	//add new catagories
 	var currentCat1 = $('#category1-drop').val();
 	var currentCat2 = $('#category2-drop').val();
@@ -147,7 +159,9 @@ function updateCat4(){
 							if(value3.Subcategories){//test that we aren't at the end!
 								value3.Subcategories.forEach(function(value4, key){ //fourth layer
 									var name = value4.Name;
-									var option = "<option>"+name+"</option>";
+									var catNum = value4.Number;
+									// console.log(catNum);
+									var option = "<option value="+catNum+">"+name+"</option>";
 									c4.append(option);
 								});
 							}else{
@@ -164,8 +178,11 @@ function updateCat4(){
 function updateCat22(){
 	//get the dropdown object to update
 	c2 = $('#category2-drop2');
-	//empty whats already there
+		//empty whats already there
 	c2.empty();
+	//put in dummy selection
+	c2.append("<option>Select category...</option>");
+
 	//add new catagories
 	var currentCat = $('#category1-drop2').val();
 	catagories.Subcategories.forEach(function(value, key){ //first layer
@@ -182,8 +199,11 @@ function updateCat22(){
 function updateCat32(){
 	//get the dropdown object to update
 	c3 = $('#category3-drop2');
-	//empty whats already there
+		//empty whats already there
 	c3.empty();
+	//put in dummy selection
+	c3.append("<option>Select category...</option>");
+
 	//add new catagories
 	var currentCat1 = $('#category1-drop2').val();
 	var currentCat2 = $('#category2-drop2').val();
@@ -205,8 +225,12 @@ function updateCat32(){
 function updateCat42(){
 	//get the dropdown object to update
 	c4 = $('#category4-drop2');
+
 	//empty whats already there
 	c4.empty();
+
+		//put in dummy selection
+	c4.append("<option>Select category...</option>");
 	//add new catagories
 	var currentCat1 = $('#category1-drop2').val();
 	var currentCat2 = $('#category2-drop2').val();
@@ -222,7 +246,9 @@ function updateCat42(){
 							if(value3.Subcategories){//test that we aren't at the end!
 								value3.Subcategories.forEach(function(value4, key){ //fourth layer
 									var name = value4.Name;
-									var option = "<option>"+name+"</option>";
+									var catNum = value4.Number;
+									// console.log(catNum);
+									var option = "<option value="+catNum+">"+name+"</option>";
 									c4.append(option);
 								});
 							}else{
@@ -238,9 +264,25 @@ function updateCat42(){
 
 function addButtonListener(){
 	$('#searchButton').click( function(){
-		// var searchObject = {}
-		console.log($('#location-drop').val());
-		console.log($('#category4-drop2').val());
-		
+
+		var loc = $('#location-drop').val();
+
+		var item1 = $('#category4-drop').val();
+
+		var item2 = $('#category4-drop2').val();
+
+		var cal = $('#calander').val();
+
+		var searchObject = {
+			"region":loc,
+			"categories": [item1, item2],
+			"date":cal
+		}
+
+		// console.log(searchObject);
+		// console.log($('#category4-drop').val());
+		// console.log($('#category4-drop2').val());
+		// console.log($('#calander').val());
+
 	})
 }
