@@ -152,7 +152,7 @@ function updateCat4(){
 					value2.Subcategories.forEach(function(value3, key){ //third layer
 						if (value3.Name === currentCat3){
 							//console.log(value3.Subcategories);
-							if(value3.Subcategories === undefined){//test that we aren't at the end!
+							if(value3.Subcategories !== undefined){//test that we aren't at the end!
 								value3.Subcategories.forEach(function(value4, key){ //fourth layer
 									var name = value4.Name;
 									var catNum = value4.Number;
@@ -160,8 +160,9 @@ function updateCat4(){
 									var option = "<option value="+catNum+">"+name+"</option>";
 									c4.append(option);
 								});
-							}else{
-								//DO SOMETHING HERE SO WE KNOW THAT IT IS THE END
+							}else{							
+								c4.empty();
+								c4.append("<option value="+value3.Number+"></option>");
 							}
 						}
 					})
@@ -239,7 +240,7 @@ function updateCat42(){
 					value2.Subcategories.forEach(function(value3, key){ //third layer
 						if (value3.Name === currentCat3){
 							
-							if(value3.Subcategories){//test that we aren't at the end!
+							if(value3.Subcategories !== undefined){//test that we aren't at the end!
 								value3.Subcategories.forEach(function(value4, key){ //fourth layer
 									var name = value4.Name;
 									var catNum = value4.Number;
@@ -248,6 +249,8 @@ function updateCat42(){
 									c4.append(option);
 								});
 							}else{
+								c4.empty();
+								c4.append("<option value="+value3.Number+"></option>");
 								//DO SOMETHING HERE SO WE KNOW THAT IT IS THE END
 							}
 						}
@@ -270,5 +273,6 @@ function addButtonListener(){
 			"categories": items,
 			"date":cal
 		}
+		// console.log(searchObject);
 	})
 }
