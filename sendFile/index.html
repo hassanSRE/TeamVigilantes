@@ -10,19 +10,22 @@
 	<script src="../jquery/main.js"></script>
 </head>
 <body>
+
+<!--HEADING-->
 	<div id="heading">
 		<div class="page-header">
 			<h1>Don't Sell My Stuff</h1>
 		</div>
 	</div>
 
+<!--DESCRIPTION-->
 	<div class="container" id="description">
 		<h1><b>Let's catch 'em</b></h1>
 		<p>Those little begggars grrrr! Don't let them get away with stealing and selling your stuff. Fill in the details below to see if your stolen goods may be listed on Trademe.</p>
 	</div>
 
+<!--LOCATION DETAILS-->
 	<div class="container" id="location">
-
 		<h2>Where are you?</h2>
 		<div class="row">
 			<div class="col-lg-4">
@@ -36,6 +39,7 @@
 		</div><!-- /.row -->
 	</div>
 
+<!--ITEM 1 DETAILS-->
 	<div class="container" id="items">
 		<h2>Enter your items</h2><br>
 		<div class="row">
@@ -64,6 +68,7 @@
 			</div><!-- /.col-lg-3 -->
 		</div><!--row-->
 
+<!--ITEM 2 DETAILS-->
 		<div class="row">
 			<div class="row">
 				<h3>Item 2</h3>
@@ -93,7 +98,25 @@
 		</div><!--row-->
 	</div>
 
-	<div class="container" id="search">
+<!--ADD ITEM BUTTON-->
+<div class="container" id="addItem">
+	<div class="row">
+		<div class="col-lg-1">
+			<button type="button" class="btn btn-success" id="addItemButton">Add Item</button>
+		</div>
+	</div>
+</div>
+
+<!--CALANDER-->
+<div class="container" id="date">
+	<form>
+  <h2>Date of theft</h2>
+  <input type="date" name="theftday">
+</form>
+</div>
+
+<!--SEARCH BUTTON-->
+<div class="container" id="search">
 	<div class="row">
 		<div class="col-lg-1">
 			<button type="button" class="btn btn-primary" id="searchButton">Search</button>
