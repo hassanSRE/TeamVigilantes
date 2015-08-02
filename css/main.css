@@ -62,3 +62,11 @@ body {
 .user h3 {
 	margin-top: 10px;
 }
+
+#mock {
+	height: 400px;
+	width: 800px;
+	background: url(../images/results.png) no-repeat;
+	background-position: center;
+
+}
