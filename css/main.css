@@ -3,8 +3,6 @@
 
 body {
 	background-color: #172933;
-	margin-left: 10%;
-	margin-right: 10%;
 }
 
 .container {
@@ -33,13 +31,13 @@ body {
 }
 
 #description h1{
+	color: #5ddfbc;
 	font-size: 64px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .form-control {
 	border-radius: 0;
-	-webkit-appearance: none;
 }
 
 /* RESULTS PAGE */
@@ -64,9 +62,36 @@ body {
 }
 
 #mock {
-	height: 400px;
+	height: 271px;
 	width: 800px;
 	background: url(../images/results.png) no-repeat;
 	background-position: center;
+  margin: auto;
+}
 
+#sponsors {
+	padding-top: 200px;
+	height: 152px;
+	width: 800px;
+	background: url(../images/resultpage_sponsorship.png) no-repeat;
+	background-position: bottom;
+  margin: auto;
+}
+
+#locksmith {
+	padding-top: 800px;
+	height: 349px;
+	width: 241px;
+	background: url(../images/locksmith.png) no-repeat;
+	background-position: bottom;
+  margin: auto;
+}
+
+#brought_to_you_by {
+	padding-top: 800px;
+	height: 142px;
+	width: 178px;
+	background: url(../images/brought_to_you_by.png) no-repeat;
+	background-position: bottom;
+  margin: auto;
 }
