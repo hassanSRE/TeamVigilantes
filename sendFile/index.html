@@ -1,111 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Don't Sell My Stuff</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <script src="../jquery/main.js"></script>
+	<title>Don't Sell My Stuff</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="../jquery/main.js"></script>
 </head>
 <body>
-
-<div class="container" id="heading">
-	<div class="page-header">
-	  <h1>Don't Sell My Stuff</h1>
-	</div>
-</div>
-
-<div id="description">
-description
-</div>
-
-<div class="container" id="location">
-
-<h2>Where are you?</h2>
-<div class="row">
-  <div class="col-lg-4">
-    <label>Location</label>
-		<select class="form-control" id="location-drop">
-		</select> 
-	</div><!-- /.col-lg-4 -->
-	<div class="col-lg-4">
-	<label>District</label>
-		<select class="form-control" id="district-drop">
-		</select> 
-	</div><!-- /.col-lg-4 -->
-</div><!-- /.row -->
-</div>
-
-<div class="container" id="items">
-	<h2>Enter your items</h2><br>
-
-	<div class="row">
-		<div class="row">
-			<h3>Item 1</h3>
+	<div id="heading">
+		<div class="page-header">
+			<h1>Don't Sell My Stuff</h1>
 		</div>
-		<div class="col-lg-3">
-		    <label>Catagory 1</label>
+	</div>
+
+	<div class="container" id="description">
+		<h1><b>Let's catch 'em</b></h1>
+		<p>Those little begggars grrrr! Don't let them get away with stealing and selling your stuff. Fill in the details below to see if your stolen goods may be listed on Trademe.</p>
+	</div>
+
+	<div class="container" id="location">
+
+		<h2>Where are you?</h2>
+		<div class="row">
+			<div class="col-lg-4">
+				<label>Location</label>
+				<select class="form-control dropown-menu" id="location-drop"></select> 
+			</div><!-- /.col-lg-4 -->
+			<div class="col-lg-4">
+				<label>District</label>
+				<select class="form-control" id="district-drop"></select> 
+			</div><!-- /.col-lg-4 -->
+		</div><!-- /.row -->
+	</div>
+
+	<div class="container" id="items">
+		<h2>Enter your items</h2><br>
+		<div class="row">
+			<div class="row">
+				<h3>Item 1</h3>
+			</div>
+			<div class="col-lg-3">
+				<label>Catagory 1</label>
 				<select class="form-control" id="category1-drop">
 				</select> 
-		</div><!-- /.col-lg-3 -->
-
-		<div class="col-lg-3">
-		    <label>Catagory 2</label>
+			</div><!-- /.col-lg-3 -->
+			<div class="col-lg-3">
+				<label>Catagory 2</label>
 				<select class="form-control" id="category2-drop">
 				</select> 
-		</div><!-- /.col-lg-3 -->
-
-		<div class="col-lg-3">
-		    <label>Catagory 3</label>
+			</div><!-- /.col-lg-3 -->
+			<div class="col-lg-3">
+				<label>Catagory 3</label>
 				<select class="form-control" id="category3-drop">
 				</select> 
-		</div><!-- /.col-lg-3 -->
-		<div class="col-lg-3">
-		    <label>Catagory 4</label>
+			</div><!-- /.col-lg-3 -->
+			<div class="col-lg-3">
+				<label>Catagory 4</label>
 				<select class="form-control" id="category4-drop">
 				</select> 
-		</div><!-- /.col-lg-3 -->
-	</div><!--row-->
+			</div><!-- /.col-lg-3 -->
+		</div><!--row-->
 
-	<div class="row">
 		<div class="row">
-			<h3>Item 2</h3>
-		</div>
-		<div class="col-lg-3">
-		    <label>Catagory 1</label>
+			<div class="row">
+				<h3>Item 2</h3>
+			</div>
+			<div class="col-lg-3">
+				<label>Catagory 1</label>
 				<select class="form-control" id="category1-drop2">
 				</select> 
-		</div><!-- /.col-lg-3 -->
-
-		<div class="col-lg-3">
-		    <label>Catagory 2</label>
+			</div><!-- /.col-lg-3 -->
+			<div class="col-lg-3">
+				<label>Catagory 2</label>
 				<select class="form-control" id="category2-drop2">
 				</select> 
-		</div><!-- /.col-lg-3 -->
+			</div><!-- /.col-lg-3 -->
 
-		<div class="col-lg-3">
-		    <label>Catagory 3</label>
+			<div class="col-lg-3">
+				<label>Catagory 3</label>
 				<select class="form-control" id="category3-drop2">
 				</select> 
-		</div><!-- /.col-lg-3 -->
+			</div><!-- /.col-lg-3 -->
 
-		<div class="col-lg-3">
-		    <label>Catagory 4</label>
+			<div class="col-lg-3">
+				<label>Catagory 4</label>
 				<select class="form-control" id="category4-drop2">
 				</select> 
-		</div><!-- /.col-lg-3 -->
-	</div><!--row-->
-</div>
+			</div><!-- /.col-lg-3 -->
+		</div><!--row-->
+	</div>
 
-<div class="container" id="search">
+	<div class="container" id="search">
 	<div class="row">
 		<div class="col-lg-1">
 			<button type="button" class="btn btn-primary" id="searchButton">Search</button>
 		</div>
 	</div>
 </div>
+
+
+
 
 </body>
 </html>
