@@ -6,10 +6,6 @@ var catagories;
 
 $(document).ready(function() {
 	init();
-	// addLocations();
-	// addDistricts();
-	// addCatagories();
-	// callbackCatagory1();
 });
 
 function init(){
@@ -155,8 +151,8 @@ function updateCat4(){
 				if (value2.Name === currentCat2){
 					value2.Subcategories.forEach(function(value3, key){ //third layer
 						if (value3.Name === currentCat3){
-							
-							if(value3.Subcategories){//test that we aren't at the end!
+							//console.log(value3.Subcategories);
+							if(value3.Subcategories === undefined){//test that we aren't at the end!
 								value3.Subcategories.forEach(function(value4, key){ //fourth layer
 									var name = value4.Name;
 									var catNum = value4.Number;
@@ -264,25 +260,15 @@ function updateCat42(){
 
 function addButtonListener(){
 	$('#searchButton').click( function(){
-
 		var loc = $('#location-drop').val();
-
 		var item1 = $('#category4-drop').val();
-
 		var item2 = $('#category4-drop2').val();
-
+		var items = [item1, item2];
 		var cal = $('#calander').val();
-
 		var searchObject = {
 			"region":loc,
-			"categories": [item1, item2],
+			"categories": items,
 			"date":cal
 		}
-
-		// console.log(searchObject);
-		// console.log($('#category4-drop').val());
-		// console.log($('#category4-drop2').val());
-		// console.log($('#calander').val());
-
 	})
 }
