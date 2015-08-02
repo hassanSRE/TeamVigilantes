@@ -153,6 +153,7 @@ function updateCat4(){
 						if (value3.Name === currentCat3){
 							//console.log(value3.Subcategories);
 							if(value3.Subcategories !== undefined){//test that we aren't at the end!
+								// console.log("hi");
 								value3.Subcategories.forEach(function(value4, key){ //fourth layer
 									var name = value4.Name;
 									var catNum = value4.Number;
