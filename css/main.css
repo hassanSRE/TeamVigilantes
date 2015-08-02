@@ -41,3 +41,24 @@ body {
 	border-radius: 0;
 	-webkit-appearance: none;
 }
+
+/* RESULTS PAGE */
+#results {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	padding: 0px 50px 20px 50px;
+	margin: auto;
+	width: 800px;
+}
+
+#results h1{
+	color:white;
+}
+
+.user {
+	padding: 5px;
+	background-color: white;
+}
+
+.user h3 {
+	margin-top: 10px;
+}
