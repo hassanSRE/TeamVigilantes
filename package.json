@@ -12,6 +12,7 @@
     "express": "~4.13.1",
     "jade": "~1.11.0",
     "morgan": "~1.6.1",
+<<<<<<< HEAD
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
@@ -19,5 +20,10 @@
     "karma": "^0.13.3",
     "karma-chrome-launcher": "^0.2.0",
     "karma-jasmine": "^0.3.6"
+=======
+    "serve-favicon": "~2.3.0",
+    "q": "*",
+    "async": "*"
+>>>>>>> f4bcf069b7dd468ffd9a605efba159a05db4afd8
   }
 }
